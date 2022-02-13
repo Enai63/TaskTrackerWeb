@@ -27,7 +27,7 @@ public class Task {
     @Column(name = "name", length = 20)
     private String name;
 
-    @Column(name = "desc", length = 250)
+    @Column(name = "description", length = 250)
     private String descriptions;
 
     @Column(name = "status")
