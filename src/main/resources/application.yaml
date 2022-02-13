@@ -4,8 +4,8 @@ server:
     context-path: /API/v1/
 spring:
   datasource:
-    username: Dev
-    password: auk6
+    username: <USER>
+    password: <PASSWORD>
     url: jdbc:postgresql://localhost:5432/webtask
     driver-class-name: org.postgresql.Driver
   jpa:
