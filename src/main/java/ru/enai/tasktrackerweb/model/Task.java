@@ -5,12 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -32,6 +27,7 @@ public class Task {
     private String descriptions;
 
     @Column(name = "status")
+    @Enumerated(EnumType.ORDINAL)
     private Status status;
 
     @Override
