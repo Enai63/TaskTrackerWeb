@@ -28,6 +28,7 @@ public class Task {
     private String descriptions;
 
     @Column(name = "status")
+    @Enumerated(EnumType.ORDINAL)
     private Status status;
 
     @Override
