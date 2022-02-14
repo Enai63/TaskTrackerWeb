@@ -5,12 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +14,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "simple_tasks")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Task {
 
     @Id
